@@ -8,6 +8,7 @@ class Cel : public Field {
 private:
     std::vector<Lepes> engedelezettLepesek;
 public:
+    
     Cel(char value);
 
     /**

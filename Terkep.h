@@ -5,7 +5,8 @@
 class Terkep {
 private:
     std::vector<std::pair<int, int>> celMezok; // azon mezok koordinata-parjaik, melyek celmezok.
-
+    int n, m;
+    Field*** terep;
     /**
     * Fuggveny, amely ellenorzi, hogy az adott (x, y) koordinata par benne van-e a palyaban.
     **/
@@ -13,8 +14,6 @@ private:
         return x >= 0 && x < n&& y >= 0 && y < m;
     }
 public:
-    int n, m;
-    Field*** terep;
     Terkep(int n, int m);
 
     /**
